@@ -1,0 +1,161 @@
+.app-container {
+    place-self: center;
+    padding: 45px;
+    border-radius: 20px;
+    background-image: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+}
+
+.app-title {
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    filter: drop-shadow(-1px 1px 2px #2b2a2a);
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-top: 15px;
+}
+
+.search-bar input {
+    border: none;
+    outline: none;
+    height: 45px;
+    padding-left: 25px;
+    border-radius: 40px;
+    background: #ebFFFF;
+    color: #626262;
+    font-size: 18px;
+}
+
+.search-bar img {
+    background-color: #ebfffc;
+    width: 50px;
+    border-radius: 50%;
+    padding: 13px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.search-bar img:hover {
+    transform: scale(1.1);
+}
+
+.weather-icon {
+    width: 280px;
+    margin: 8px 0;
+    animation: dribble 1s infinite;
+}
+
+@keyframes dribble {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+.temperature {
+    color: #fff;
+    font-size: 80px;
+}
+
+.location {
+    font-family: "Noto Sans JP", serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: #ebfffc;
+}
+
+.weather-data {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.weather-data .col {
+    display: flex;
+    align-items: flex-start;
+    gap: 13px;
+    font-size: 15px;
+}
+
+.weather-data .col span {
+    display: block;
+    font-size: 15px;
+}
+.weather-data .col img {
+    width: 28px;
+    margin-top: 10px;
+}
+
+/* ======== Media Query ========== */
+
+@media only screen and (min-width:1024px) {
+    .app-container {
+      padding: 30px;
+    }
+  }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .app-container {
+        padding: 20px;
+    }
+    .app-title {
+        font-size: 22px;
+        margin-top: 20px;
+    }
+    .search-bar {
+        gap: 5px;
+        margin-top: 10px;
+    }
+    .search-bar input{
+        height: 35px;
+        padding-left: 12px;
+        font-size: 15px;
+    }
+    .search-bar img {
+        width: 35px;
+        padding: 8px;
+    }
+    .weather-icon {
+        width: 180px;
+    }
+    .temperature {
+        font-size: 50px;
+    }
+    .weather-data {
+        width: 90%;
+    }
+    .weather-data .col {
+        gap: 5px;
+        font-size: 12px;
+    }
+    .weather-data .col img {
+        width: 20px;
+        margin-top: 8px;
+    }
+}
+@media only screen and (max-width: 767px) {
+    .app-container {
+        place-self: unset;
+        border-radius: unset;
+    }
+    .weather-data {
+        width: 60%;
+    }
+}
