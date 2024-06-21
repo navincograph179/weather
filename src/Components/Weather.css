@@ -155,12 +155,36 @@
         place-self: unset;
         border-radius: unset;
     }
+    .search-bar {
+        font-size: 15px;
+    }
     .weather-data {
         width: 60%;
     }
 }
 @media only screen and (max-width: 480px)  {
     .app-container {
-        padding: 0;
+        padding: 0 5px;
+    }
+    .search-bar {
+        gap: 8px;
+    }
+    .search-bar input {
+        font-size: 15px;
+        height: 40px;
+    }
+    .search-bar img {
+        width: 40px;
+        padding: 10px;
+    }
+    .weather-icon {
+        width: 180px;
+    }
+    .temperature {
+        font-size: 60px;
+    }
+    .weather-data {
+        margin-top: 25px;
+        width: 70%;
     }
 }
