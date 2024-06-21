@@ -1,4 +1,6 @@
 .app-container {
+    /* width: 400px;
+    height: 680px; */
     place-self: center;
     padding: 45px;
     border-radius: 20px;
@@ -163,25 +165,30 @@
     }
 }
 @media only screen and (max-width: 480px)  {
+    .app-title {
+        font-size: 30px;
+        filter: drop-shadow(0px 1px 1px #2b2a2a);
+    }
     .app-container {
         padding: 0 5px;
+        row-gap: 25px;
     }
     .search-bar {
         gap: 8px;
     }
     .search-bar input {
-        font-size: 15px;
-        height: 40px;
+        font-size: 20px;
+        height: 45px;
     }
     .search-bar img {
-        width: 40px;
+        width: 45px;
         padding: 10px;
     }
     .weather-icon {
-        width: 180px;
+        width: 250px;
     }
     .temperature {
-        font-size: 60px;
+        font-size: 70px;
     }
     .weather-data {
         margin-top: 25px;
